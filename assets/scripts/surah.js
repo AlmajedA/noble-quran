@@ -5,6 +5,7 @@ const apiURL = `https://api.alquran.cloud/v1/surah/${surahNumber}/quran-simple-e
 axios.get(apiURL)
     .then(response => {
         let [basmala, ayahs] = processAyahs(response.data.data.ayahs);
+        setTitle(`${response.data.data.name} - القرآن الكريم`);
         setSurahName(response.data.data.name);
         if (surahNumber != 1)
             displayBasmala(basmala);
@@ -35,6 +36,9 @@ function processAyahs(ayahs_api){
 
 }
 
+function setTitle(title) {
+    document.title = title;
+}
 
 function setSurahName(name) {
     const surahNameElement = document.getElementById('surah-name');
