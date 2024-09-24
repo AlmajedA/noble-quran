@@ -1,6 +1,6 @@
 const urlParams = new URLSearchParams(window.location.search);
 const surahNumber = urlParams.get('surah') || 1;
-const apiURL = `http://api.alquran.cloud/v1/surah/${surahNumber}/quran-simple-enhanced`
+const apiURL = `https://api.alquran.cloud/v1/surah/${surahNumber}/quran-simple-enhanced`
 
 axios.get(apiURL)
     .then(response => {
