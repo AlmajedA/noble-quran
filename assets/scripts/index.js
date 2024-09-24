@@ -1,4 +1,4 @@
-const apiURL = `http://api.alquran.cloud/v1/surah`
+const apiURL = `https://api.alquran.cloud/v1/surah`
 
 axios.get(apiURL)
     .then(response => {
