@@ -6,7 +6,7 @@ axios.get(apiURL)
     .then(response => {
         let [basmala, ayahs] = processAyahs(response.data.data.ayahs);
         setSurahName(response.data.data.name);
-        if (surahNumber !== 1)
+        if (surahNumber != 1)
             displayBasmala(basmala);
         displayAyahs(ayahs);
     })
@@ -18,7 +18,7 @@ axios.get(apiURL)
 function processAyahs(ayahs_api){
     first_ayah = ayahs_api.shift().text;
     let basmala = '';
-    if (surahNumber !== 1) {
+    if (surahNumber != 1) {
         basmala = first_ayah.slice(0, 39);
         first_ayah = first_ayah.slice(39).trim();
     }

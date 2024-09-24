@@ -9,7 +9,7 @@ axios.get(apiURL)
             let surahElement = document.createElement('div');
             // let surahElement = document.createElement('a');
             surahElement.classList.add('col');
-            surahElement.innerHTML = `<a id="surah-${surah.number}" class="btn btn-outline-dark equal-size" href="./surah.html?surah=${surah.number}">${surah.name}</a>`;
+            surahElement.innerHTML = `<a id="surah-${surah.number}" class="btn btn-outline-dark equal-size w-100 fs-2" href="./surah.html?surah=${surah.number}">${surah.name}</a>`;
             surahsList.appendChild(surahElement);
         })
     })
