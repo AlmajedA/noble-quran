@@ -1,22 +1,10 @@
 @font-face {
-	font-family: 'Othmani-font';
-	src:url('../fonts/HafsNastaleeqVer10.woff') format('woff');
+	font-family: 'Hafs-font';
+    src: url('../fonts/Hafs.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 body {
-    font-family: 'Othmani-font', sans-serif;
-	font-size: 1.6rem;
+    font-family: 'Hafs-font', sans-serif;
 }
-
-
-/* body {
-    font-size: 2.1em;
-    text-align: center;
-    font-family: conv_original-hafs;
-    color: #17274a;
-    font-weight: 400;
-    line-height: 1.65em;
-    margin: 0 0 1em
-} */
