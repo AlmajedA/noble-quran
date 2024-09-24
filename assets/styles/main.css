@@ -1,0 +1,21 @@
+
+
+html[lang="en"] {
+    direction: ltr;
+}
+
+html[lang="ar"] {
+    direction: rtl;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+}
+
+span {
+    color: green;
+}
+#surah {
+    text-align: center;
+}
